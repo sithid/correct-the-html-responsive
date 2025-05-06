@@ -64,6 +64,13 @@ hr {
 	max-width: 1000px;
 }
 
+.grid-container {
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1000px;
+}
+
 .header {
 	background-color: #64bcda;
 	border-bottom: 8px solid #000000;
@@ -167,18 +174,31 @@ hr {
 	.header_pub-info {
 		flex-direction: row;
 		justify-content: space-between;
+		margin-left: 1rem;
+		margin-right: 1rem;
 		align-items: center;
 	}
 
+	.grid-container {
+		display: grid;
+		grid-template-areas:
+			"main sidebar";
+		grid-gap: 20px;
+		padding: 20px;
+	}
+
 	.main-article {
-		width: 60%;
+
 		border-radius: 0.6rem;
 		margin: 0;
 	}
 
 	.main-sidebar {
-		width: 40%;
 		border-radius: 0.6rem;
 		margin: 0;
+	}
+
+	.footer p {
+		text-align: center;
 	}
 }
