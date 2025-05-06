@@ -188,12 +188,13 @@ hr {
 	}
 
 	.main-article {
-
+		grid-area: main;
 		border-radius: 0.6rem;
 		margin: 0;
 	}
 
 	.main-sidebar {
+		grid-area: sidebar;
 		border-radius: 0.6rem;
 		margin: 0;
 	}
